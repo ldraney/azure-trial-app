@@ -33,7 +33,7 @@ jobs:
             ghcr.io/ldraney/az-trial-app:latest
             ghcr.io/ldraney/az-trial-app:${{ github.sha }}
           context: ./app
-          file: Dockerfile.dev
+          file: ./app/Dockerfile.dev
           
       - name: Log out from GitHub Container Registry
         run: docker logout ghcr.io
